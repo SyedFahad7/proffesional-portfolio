@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Louize local font */
+@font-face {
+  font-family: 'Louize';
+  src: url('/assets/fonts/Louize.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
     :root {
       --background: 0 0% 100%;

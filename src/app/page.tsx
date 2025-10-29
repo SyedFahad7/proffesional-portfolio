@@ -181,12 +181,9 @@ export default function Page() {
 
                 <button
                   onClick={() => window.open("https://amzn.in/d/77NWat6", "_blank")}
-                  className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800 w-1/2 md:w-2/3 h-10"
+                  className="rounded-full text-white bg-black mt-4 text-xs font-louize font-normal dark:bg-zinc-800 w-1/2 md:w-2/3 h-10"
                 >
-                  <span>Buy now </span>
-                  <span className="bg-zinc-700 rounded-full text-xs px-2 py-1 text-white">
-                  ₹999/-
-                  </span>
+                  Buy now
                 </button>
               </div>
             </div>
