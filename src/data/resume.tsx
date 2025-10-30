@@ -128,7 +128,7 @@ export const DATA = {
       "href": "https://wavexcel.in",
       "badges": [],
       "location": "Remote",
-      "title": "Frontend Developer Intern",
+      "title": "Software Developer Intern",
       "logoUrl": "/wavexcel.jpeg",
       "start": "March 2025",
       "end": "June 2025",
