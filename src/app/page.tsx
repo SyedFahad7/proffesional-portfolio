@@ -196,15 +196,15 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  My Projects
+                  My Recent Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
+                  Check out my latest works
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                  websites to mobile apps & low-code solutions. Here are a few of my
+                  favorites :)
                 </p>
               </div>
             </div>
@@ -221,7 +221,7 @@ export default function Page() {
                     key={project.title}
                     title={project.title}
                     description={project.description}
-                    dates={project.dates}
+                    // dates={project.dates}
                     tags={project.technologies}
                     image={project.image}
                     video={project.video}
@@ -233,7 +233,7 @@ export default function Page() {
                     key={project.title}
                     title={project.title}
                     description={project.description}
-                    dates={project.dates}
+                    // dates={project.dates}
                     tags={project.technologies}
                     image={project.image}
                     video={project.video}
@@ -257,8 +257,8 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in development , I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
+                  During my time as a student & developer, I've attended many
+                  hackathons. People from around the
                   country would come together and build incredible things in 2-3
                   days. It was eye-opening to see the endless possibilities
                   brought to life by a group of motivated and passionate
