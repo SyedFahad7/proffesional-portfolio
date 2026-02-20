@@ -15,7 +15,6 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@storyblok/js": "^4.0.1",
-    "@storyblok/react": "^5.1.0",
     "@types/mdx": "^2.0.13",
     "@vercel/analytics": "^1.6.1",
     "class-variance-authority": "^0.7.0",
