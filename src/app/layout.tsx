@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import FontOutfit from "next/font/local";
 import "./globals.css";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/next";
 
 const fontSans = FontSans({
   subsets: ["latin"],
