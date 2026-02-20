@@ -14,7 +14,7 @@ interface ResumeCardProps {
   logoUrl: string;
   altText: string;
   title: string;
-  location: string;
+  location?: string;
   subtitle?: string;
   href?: string;
   badges?: readonly string[];
@@ -47,7 +47,7 @@ export const ResumeCard = ({
       className="block cursor-pointer"
       onClick={handleClick}
     >
-      <Card className="flex flex-row items-center">
+      <Card className="flex flex-row items-center font-outfit">
           <Avatar className="border size-12 bg-muted-background dark:bg-foreground">
             <AvatarImage
               src={logoUrl}
@@ -59,7 +59,7 @@ export const ResumeCard = ({
         <div className="flex-grow ml-3 items-center flex-col group">
           <CardHeader>
             <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
+              <h3 className="font-outfit inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
                 {title}
                 {badges && (
                   <span className="inline-flex gap-x-1">
@@ -86,9 +86,13 @@ export const ResumeCard = ({
               </div>
             </div>
             <div className="flex flex-col gap-y-0.5">
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
-            <div className=" flex gap-1 font-sans text-xs items-center"><CiLocationArrow1 />{location}</div>
-            </div>     
+              {subtitle && <div className="font-outfit text-xs">{subtitle}</div>}
+              {location && (
+                <div className="flex gap-1 font-outfit text-xs items-center">
+                  <CiLocationArrow1 />{location}
+                </div>
+              )}
+            </div>
           </CardHeader>
           {description && (
             <motion.div

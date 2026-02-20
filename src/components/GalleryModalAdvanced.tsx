@@ -7,6 +7,7 @@ import { useEffect, useState, useRef } from "react";
 import { AnimatePresence, motion, MotionConfig } from "framer-motion";
 import { useSwipeable } from "react-swipeable";
 import Image from "next/image";
+import { getOptimizedImageUrl } from "@/utils/storyblokImage";
 import downloadPhoto from "../utils/downloadPhoto";
 
 function SkeletonLoader({ className = '' }) {
@@ -190,13 +191,14 @@ export default function GalleryModalAdvanced({
                     <SkeletonLoader className="absolute inset-0 w-full h-full z-0" />
                   )}
                   <Image
-                    src={currentImage.filename}
+                    src={getOptimizedImageUrl(currentImage.filename, { width: 1280, quality: 80, format: 'webp' })}
                     width={1280}
                     height={853}
                     priority
                     alt={currentImage.alt || currentImage.title || "Gallery image"}
                     onLoad={() => setLoaded(true)}
                     className={`rounded-lg object-contain max-h-[80vh] max-w-full ${!loaded ? 'opacity-0' : 'opacity-100'}`}
+                    sizes="(max-width: 1024px) 90vw, 1280px"
                   />
                 </motion.div>
               </AnimatePresence>
@@ -277,7 +279,8 @@ export default function GalleryModalAdvanced({
                                 ? "brightness-110 hover:brightness-110"
                                 : "brightness-50 contrast-125 hover:brightness-75"
                             }`}
-                            src={img.filename}
+                            src={getOptimizedImageUrl(img.filename, { width: 120, quality: 50, format: 'webp' })}
+                            loading="lazy"
                           />
                         </motion.button>
                       );

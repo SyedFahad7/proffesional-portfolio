@@ -1,3 +1,4 @@
+"use client";
 import dynamic from "next/dynamic";
 
 // Dynamically import GalleryGrid to avoid SSR issues with Framer Motion

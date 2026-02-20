@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { getOptimizedImageUrl } from "@/utils/storyblokImage";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Download } from "lucide-react";
 import GalleryModalAdvanced from "./GalleryModalAdvanced";
@@ -65,12 +66,15 @@ export default function GalleryGrid({
             className="group cursor-pointer glass"
             onClick={() => setSelectedIndex(index)}
           >
-            <Image
-              src={image.filename}
+            <img
+              src={getOptimizedImageUrl(image.filename, { width: 600, quality: 60, format: 'webp' })}
               alt={image.alt || image.title}
               width={400}
               height={300}
               className="relative z-10 w-full h-48 sm:h-56 md:h-64 object-contain transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, 33vw"
+              style={{ display: 'block' }}
             />
             <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-2">

@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import { url } from "inspector";
 import { HomeIcon, NotebookIcon, Images } from "lucide-react";
 import { Smartphone } from 'lucide-react';
 
@@ -10,8 +11,8 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/Hyderabad",
   description:
     "Engineer by Day Coder by Night 🧑🏻‍💻. I love building things and helping people.",
-  summary: "I started my coding journey more than two years ago, and I immediately fell in love with it. I was super excited to build products & over time I worked with a lot of startups and organizations, and most importantly, help people get into tech, use tech to improve lives, and bring it into businesses. I'm also into Developer Relations — building communities, creating content, and connecting developers through events and talks to share cool products and what I’ve learned.",
-  avatarUrl: "/me.jpg",
+  summary: "I started my coding journey more than two years ago, and I immediately fell in love with it. I was super excited to build products & over time I worked with a lot of startups and organizations, and most importantly, help people get into tech, use tech to improve lives, and bring it into businesses. I'm also into Developer Relations, where I focus on advocacy and developer education. I like building communities, creating content, and connecting developers through hosting events and delivering talks to share cool products and what I’ve learned.",
+  avatarUrl: "/avatar.png",
   skills: [
     "Developer Relations",
     "Advocacy",
@@ -28,8 +29,8 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/gallery", icon: Images, label: "Gallery" },
+    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    // { href: "/gallery", icon: Images, label: "Gallery" },
   ],
   contact: {
     email: "syedfahad.dev@gmail.com",
@@ -56,6 +57,12 @@ export const DATA = {
 
         navbar: true,
       },
+      Instagram: {
+        name: "Instagram",
+        url: "https://www.instagram.com/fahad.developer",
+        icon: Icons.instagram,
+        navbar: true,
+      },
       email: {
         name: "Send Email",
         url: "#",
@@ -68,14 +75,36 @@ export const DATA = {
 
   work: [
     {
+      company: "BetterBugs",
+      href: "https://betterbugs.io",
+      badges: [],
+      logoUrl: "/betterbugs.png",
+      title: "Developer Relations Intern",
+      location: "Hybrid-Ahmedabad-IND",
+      start: "Dec 2025",
+      end: "Current",
+      description: "Lead and manage the developer community across platforms including Discord. Represent the company at conferences and industry summits, host online and offline meetups, and drive community engagement initiatives. Maintain and contribute to open source repositories, write technical documentation and blogs, and collaborate with product and engineering teams to improve developer experience and adoption",
+    },
+    {
+      company: "Keyshade",
+      href: "https://keyshade.io",
+      badges: [],
+      logoUrl: "/keyshade.jpeg",
+      title: "Developer Relations Intern",
+      location: "Hybrid-Kolkata-IND",
+      start: "Nov 2025",
+      end: "Current",
+      description: "Create technical content including blogs, guides, and documentation. Support community initiatives and represent the product at events and conferences. Contribute to code and developer experience improvements.",
+    },
+    {
       company: "Trikaya",
       href: "https://trikaya.io",
       badges: [],
       logoUrl: "/trikaya2.png",
       title: "Developer Relations Intern",
-      location: "Hybrid-Bangalore",
+      location: "Hybrid-Bangalore-IND",
       start: "Sept 2025",
-      end: "Present-2 Months",
+      end: "Dec 2025",
       description: "Building and engaging AI & Blockchain developer communities through events, sessions, and hackathons.\n Promoting Trikaya’s vision of verified, AI-driven career pathways across colleges and tech ecosystems.\n Creating technical content and improving developer experience across platform and community touchpoints.",
     },
     {
@@ -83,8 +112,8 @@ export const DATA = {
       href: "https://xunoia.com",
       badges: [],
       logoUrl: "/xunoia.png",
-      title: "Growth Manager Intern",
-      location: "Hybrid",
+      title: "Growth Manager",
+      location: "Hybrid-Hyderabad-IND",
       start: "Jun 2025",
       end: "Oct 2025",
       description: "Secured clients, partnerships, and investor leads for new SaaS and AI-driven projects, fueling company growth and product expansion. Building & maintaining investor and client relations through performance tracking, and transparent reporting.",
@@ -94,7 +123,7 @@ export const DATA = {
       href: "https://appreciated-calendar-213762.framer.app",
       badges: [],
       logoUrl: "/noyi.png",
-      title: "Project Manager & Web Developer",
+      title: "Project Manager & Developer Intern",
       location: "United Kingdom · Remote · Part-time",
       start: "May 2025",
       end: "Aug 2025",
@@ -104,8 +133,8 @@ export const DATA = {
       company: "CycleSync",
       href: "https://cyclesync.in",
       badges: [],
-      location: "Hybrid",
-      title: "Web Developer",
+      location: "WFO",
+      title: "Lead Developer",
       logoUrl: "/CYCLESYNC.png",
       start: "December 2024",
       end: "Current",
@@ -116,7 +145,7 @@ export const DATA = {
       "company": "WissionAxis",
       "href": "https://www.linkedin.com/company/wissionaxis",
       "badges": [],
-      "location": "Hybrid",
+      "location": "WFO",
       "title": "Web Developer",
       "logoUrl": "/wissionaxis.jpg",
       "start": "May 2025",
@@ -139,7 +168,7 @@ export const DATA = {
       "href": "https://madquick.in",
       "badges": [],
       "location": "Remote",
-      "title": "Web Developer + Android Developer Intern",
+      "title": "Web & Android AppDeveloper Intern",
       "logoUrl": "/madquick.jpeg",
       "start": "March 2025",
       "end": "June 2025",
@@ -159,7 +188,7 @@ export const DATA = {
       company: "Xunoia",
       badges: [],
       href: "",
-      location: "Remote",
+      location: "WFO",
       title: "Flutter & Web Developer Intern",
       logoUrl: "/xunoia.png",
       start: "November 2024",
@@ -180,23 +209,34 @@ export const DATA = {
   ],
   advocacies: [
     {
-      company: "Cloud Computing Navtive Foundation",
+      company: "Cloud Computing Navtive Foundation-Hyderabad",
       href: "https://community.cncf.io/cloud-native-hyderabad/",
       badges: [],
       location: "Hybrid",
-      title: "Design Architect",
-      logoUrl: "/cncf.jpeg",
+      title: "Design & Content",
+      logoUrl: "/cncf.png",
       start: "January 2025",
       end: "Current",
       description: "Creating visually engaging designs for community events, meetups, and initiatives using Canva and Figma to enhance outreach and engagement."
+    },
+    {
+      company: "Trae",
+      href: "https://www.trae.ai/",
+      badges: [],
+      location: "Remote",
+      title: "Trae Fellow | Lead, Trae Friends @Hyderabad ",
+      logoUrl: "/trae.avif",
+      start: "February 2025",
+      end: "Current",
+      description:"As a TRAE Fellow I help grow the global AI coding community by hosting events, talks, and discussions that bring developers together around the TRAE AI IDE and its vision for human and AI collaboration. I also lead the TRAE Friends group in Hyderabad, organizing meetups and activities that support learning, advocacy, and adoption of emerging developer tools like TRAE."
     },
     {
       company: "HackPrix Community",
       href: "https://hackprix.in",
       badges: [],
       location: "Hybrid",
-      title: "Lead Organiser & Developer",
-      logoUrl: "/hp.jpg",
+      title: "Community Lead",
+      logoUrl: "hp.png",
       start: "March 2024",
       end: "Current",
       description:"Leading the end-to-end organization and technical execution of HackPrix — India’s most vibrant student-led hackathon ecosystem. With two successful seasons empowering 500+ participants each, HackPrix has grown into a thriving community of 2000+ students, developers, and professionals across the country. I’m responsible for building and maintaining the official website, managing the overall developer experience, collaborating with partners and mentors, and ensuring seamless operations — all driven by our mission of Building for Better 💙."
@@ -219,8 +259,8 @@ export const DATA = {
       location: "Remote",
       title: "AI Ambassador",
       logoUrl: "/pieces.png",
-      start: "Jan 2025",
-      end: "Current",
+      start: "March 2025",
+      end: "Nov 2025",
       description:"Advocating AI adoption, supporting developer communities, and promoting Pieces tools through events, content, and outreach."
     },
     {

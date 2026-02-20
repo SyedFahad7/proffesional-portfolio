@@ -6,7 +6,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'a.storyblok.com',
         port: '',
-        pathname: '/f/**',
+        pathname: '/**',
       },
       {
         protocol: 'https',
