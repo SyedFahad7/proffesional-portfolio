@@ -93,7 +93,7 @@ export const DATA = {
       title: "Developer Relations Intern",
       location: "Hybrid-Kolkata-IND",
       start: "Nov 2025",
-      end: "Current",
+      end: "Feb 2026",
       description: "Create technical content including blogs, guides, and documentation. Support community initiatives and represent the product at events and conferences. Contribute to code and developer experience improvements.",
     },
     {
