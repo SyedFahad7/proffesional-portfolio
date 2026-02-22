@@ -10,7 +10,7 @@ export const DATA = {
   location: "Hyderabad, India ",
   locationLink: "https://www.google.com/maps/place/Hyderabad",
   description:
-    "Engineer by Day Coder by Night 🧑🏻‍💻. I love building things and helping people.",
+    "Building Communities the DevRel Way 🥑. I love building things and helping people.",
   summary: "I started my coding journey more than two years ago, and I immediately fell in love with it. I was super excited to build products & over time I worked with a lot of startups and organizations, and most importantly, help people get into tech, use tech to improve lives, and bring it into businesses. I'm also into Developer Relations, where I focus on advocacy and developer education. I like building communities, creating content, and connecting developers through hosting events and delivering talks to share cool products and what I’ve learned.",
   avatarUrl: "/avatar.png",
   skills: [
