@@ -183,7 +183,7 @@ export default function Page() {
                   onClick={() => window.open("https://amzn.in/d/77NWat6", "_blank")}
                   className="rounded-full text-white bg-black mt-4 text-xs font-outfit font-normal dark:bg-zinc-800 w-1/2 md:w-2/3 h-10"
                 >
-                  Buy now
+                  Buy the Book
                 </button>
               </div>
             </div>
