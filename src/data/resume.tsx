@@ -246,7 +246,7 @@ export const DATA = {
       href: "https://www.bitcoinwala.ai/",
       badges: [],
       location: "Hybrid",
-      title: "Community DevRel",
+      title: "Community Management",
       logoUrl: "/bitcoinwala.jpg",
       start: "October 2025",
       end: "Current",
