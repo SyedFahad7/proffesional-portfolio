@@ -219,17 +219,17 @@ export const DATA = {
       end: "Current",
       description: "Creating visually engaging designs for community events, meetups, and initiatives using Canva and Figma to enhance outreach and engagement."
     },
-    {
-      company: "Trae",
-      href: "https://www.trae.ai/",
-      badges: [],
-      location: "Remote",
-      title: "Trae Fellow | Lead, Trae Friends @Hyderabad ",
-      logoUrl: "/trae.avif",
-      start: "February 2025",
-      end: "Current",
-      description:"As a TRAE Fellow I help grow the global AI coding community by hosting events, talks, and discussions that bring developers together around the TRAE AI IDE and its vision for human and AI collaboration. I also lead the TRAE Friends group in Hyderabad, organizing meetups and activities that support learning, advocacy, and adoption of emerging developer tools like TRAE."
-    },
+    // {
+    //   company: "Trae",
+    //   href: "https://www.trae.ai/",
+    //   badges: [],
+    //   location: "Remote",
+    //   title: "Trae Fellow | Lead, Trae Friends @Hyderabad ",
+    //   logoUrl: "/trae.avif",
+    //   start: "February 2025",
+    //   end: "Current",
+    //   description:"As a TRAE Fellow I help grow the global AI coding community by hosting events, talks, and discussions that bring developers together around the TRAE AI IDE and its vision for human and AI collaboration. I also lead the TRAE Friends group in Hyderabad, organizing meetups and activities that support learning, advocacy, and adoption of emerging developer tools like TRAE."
+    // },
     {
       company: "HackPrix Community",
       href: "https://hackprix.in",
